@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar text-light bg-dark">
             <div class="container-fluid">
-              <span class="fuente_cronometro tamaño_tiempo mb-0 h1">PIXEL Cronometro</span>
+              <span class="fuente_cronometro tamaño_tiempo mb-0 h1">PIXEL Chronometer</span>
             </div>
           </nav>
     </header>
@@ -27,7 +27,7 @@
         <div class="img_div">
             <img class="img_fondo" src="img/pixels1.jpg" alt="pixels bosque">
         </div>
-        <section class="position_crono tamaño_tiempo fuente_cronometro d-flex justify-content-center">
+        <section class="position_crono text-light tamaño_tiempo fuente_cronometro d-flex justify-content-center">
             <div id="horas">00</div>
             <div>:</div>
             <div id="minutos">00</div>
@@ -36,10 +36,19 @@
             <div>:</div>
             <div id="centesimas">00</div>
         </section>
+        <section class="position_crono text-light tamaño_tiempo fuente_cronometro d-flex justify-content-center">
+            <div id="sHoras">00</div>
+            <div>:</div>
+            <div id="sMinutos">00</div>
+            <div>:</div>
+            <div id="sSegundos">00</div>
+            <div>:</div>
+            <div id="sCentesimas">00</div>
+        </section>
         <section class="position_crono d-flex justify-content-center fuente_cronometro">
-            <button class="mx-2 btn btn-secondary">RESET</button>
-            <button class="mx-2 btn btn-danger">STOP</button>
-            <button class="mx-2 btn btn-success">START</button>
+            <button class="mx-2 btn btn-warning" onclick="sample()">SAMPLE</button>
+            <button class="mx-2 btn btn-secondary" onclick="reset()">RESET</button>
+            <button class="mx-2 btn btn-success" onclick="startStop()" id="boton">START</button>
         </section>
     </main>
     <script src="js/popper.min.js"></script>
