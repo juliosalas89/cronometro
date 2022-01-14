@@ -1,0 +1,24 @@
+.fuente_cronometro {
+    font-family: 'Londrina Outline', cursive;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Press Start 2P', cursive;
+}
+
+.tamaño_tiempo {
+    font-size: 50px;
+}
+
+.img_div {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+}
+
+.img_fondo {
+    width: 100%;
+}
+
+.position_crono {
+    position: relative;
+    top: 100px;
+}
