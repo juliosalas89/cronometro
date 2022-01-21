@@ -11,44 +11,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Orbitron&family=Press+Start+2P&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Electrolize&family=Londrina+Outline&family=Orbitron&family=Press+Start+2P&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <nav class="navbar text-light bg-dark">
             <div class="container-fluid">
-              <span class="fuente_cronometro tamaño_tiempo mb-0 h1">Chronometer</span>
+                <span class="fuente_cronometro tamaño_tiempo mb-0 h1">Chronometer</span>
             </div>
-          </nav>
-    </header>
-    <main class="container-fluid p-0">
-        <div class="img_div">
-            <img class="img_fondo" src="img/pixels1.jpg" alt="pixels bosque">
-        </div>
-        <section class="position_crono text-light tamaño_tiempo fuente_cronometro d-flex justify-content-center">
-            <div id="horas">00</div>
-            <div>:</div>
-            <div id="minutos">00</div>
-            <div>:</div>
-            <div id="segundos">00</div>
-            <div>:</div>
-            <div id="centesimas">00</div>
-        </section>
-        <section class="position_crono text-light tamaño_tiempo fuente_cronometro d-flex justify-content-center">
-            <div id="sHoras">00</div>
-            <div>:</div>
-            <div id="sMinutos">00</div>
-            <div>:</div>
-            <div id="sSegundos">00</div>
-            <div>:</div>
-            <div id="sCentesimas">00</div>
-        </section>
-        <section class="position_crono d-flex justify-content-center fuente_cronometro">
-            <button class="mx-2 btn btn-warning" onclick="sample()">SAMPLE</button>
-            <button class="mx-2 btn btn-secondary" onclick="reset()">RESET</button>
-            <button class="mx-2 btn btn-success" onclick="startStop()" id="boton">START</button>
+        </nav>
+    </header> -->
+    <main class="container-fluid d-flex justify-content-center">
+        <section class="my-5 text-light fondo fuente_cronometro">
+            <section class="position_crono tamaño_tiempo d-flex justify-content-center">
+                <div class="ancho_tiempo" id="horas">00</div>
+                <div>:</div>
+                <div class="ancho_tiempo" id="minutos">00</div>
+                <div>:</div>
+                <div class="ancho_tiempo" id="segundos">00</div>
+                <div>:</div>
+                <div class="ancho_tiempo" id="centesimas">00</div>
+            </section>
+            <section class="position_crono tamaño_tiempo d-flex justify-content-center">
+                <div class="ancho_tiempo" id="sHoras">00</div>
+                <div>:</div>
+                <div class="ancho_tiempo" id="sMinutos">00</div>
+                <div>:</div>
+                <div class="ancho_tiempo" id="sSegundos">00</div>
+                <div>:</div>
+                <div class="ancho_tiempo" id="sCentesimas">00</div>
+            </section>
+            <section class="mt-3 position_crono d-flex justify-content-center">
+                <button class="ancho_boton mx-2 btn btn-secondary" onclick="reset()">RESET CHRONO</button>
+                <button class="ancho_boton mx-2 btn btn-success" onclick="startStop()" id="boton">START</button>
+            </section>
+            <section class="my-3 position_crono d-flex justify-content-center">
+                <button class="ancho_boton mx-2 btn btn-secondary" onclick="resetAll()">RESET ALL</button>
+                <button class="ancho_boton mx-2 btn btn-warning" onclick="sample()">SAMPLE</button>
+            </section>
         </section>
     </main>
     <script src="js/popper.min.js"></script>

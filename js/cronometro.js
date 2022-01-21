@@ -54,11 +54,11 @@ function startStop() {
     if (i) {
         tiempo = window.setInterval(contar, 10);
         boton.innerText = "STOP";
-        boton.className = "mx-2 btn btn-danger";
+        boton.className = "ancho_boton mx-2 btn btn-danger";
         i = false;
     } else {
         boton.innerText = "START";
-        boton.className = "mx-2 btn btn-success";
+        boton.className = "ancho_boton mx-2 btn btn-success";
         window.clearInterval(tiempo);
         i = true;
     }
@@ -96,4 +96,19 @@ function sample() {
     } else {
         sCentesimas.innerText = cent;
     }
+}
+
+function resetAll() {
+    seg = 0;
+    min = 0;
+    hora = 0;
+    cent = 0;
+    horas.innerText = "00";
+    minutos.innerText = "00";
+    segundos.innerText = "00";
+    centesimas.innerText = "00";
+    sHoras.innerText = "00";
+    sMinutos.innerText = "00";
+    sSegundos.innerText = "00";
+    sCentesimas.innerText = "00";
 }

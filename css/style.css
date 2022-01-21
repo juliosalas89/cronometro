@@ -1,11 +1,11 @@
 .fuente_cronometro {
-    font-family: 'Londrina Outline', cursive;
-font-family: 'Orbitron', sans-serif;
-font-family: 'Press Start 2P', cursive;
+font-family: 'Chakra Petch', sans-serif;
+/* font-family: 'Electrolize', sans-serif; */
+
 }
 
 .tamaño_tiempo {
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .img_div {
@@ -21,4 +21,20 @@ font-family: 'Press Start 2P', cursive;
 .position_crono {
     position: relative;
     top: 100px;
+}
+
+.fondo {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.795);
+    height: 500px;
+    width: 500px;
+}
+
+.ancho_tiempo {
+    width: 76px;
+    text-align: center;
+}
+
+.ancho_boton {
+    width: 100px;
 }
