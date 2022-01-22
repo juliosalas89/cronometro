@@ -73,6 +73,27 @@ function reset() {
     minutos.innerText = "00";
     segundos.innerText = "00";
     centesimas.innerText = "00";
+    if (boton.innerText == "STOP") {
+        startStop();
+    }
+}
+
+function resetAll() {
+    seg = 0;
+    min = 0;
+    hora = 0;
+    cent = 0;
+    horas.innerText = "00";
+    minutos.innerText = "00";
+    segundos.innerText = "00";
+    centesimas.innerText = "00";
+    sHoras.innerText = "00";
+    sMinutos.innerText = "00";
+    sSegundos.innerText = "00";
+    sCentesimas.innerText = "00";
+    if (boton.innerText == "STOP") {
+        startStop();
+    }
 }
 
 function sample() {
@@ -98,17 +119,10 @@ function sample() {
     }
 }
 
-function resetAll() {
-    seg = 0;
-    min = 0;
-    hora = 0;
-    cent = 0;
-    horas.innerText = "00";
-    minutos.innerText = "00";
-    segundos.innerText = "00";
-    centesimas.innerText = "00";
-    sHoras.innerText = "00";
-    sMinutos.innerText = "00";
-    sSegundos.innerText = "00";
-    sCentesimas.innerText = "00";
+if (screen.width < 540) {
+    document.getElementById("section").className = "my-5 text-light fuente_cronometro"
+    document.getElementById("body").className = "fondo_sm"
+} else {
+    document.getElementById("section").className = "fondo_lg my-5 text-light fuente_cronometro"
+    document.getElementById("body").className = ""
 }

@@ -23,7 +23,11 @@ font-family: 'Chakra Petch', sans-serif;
     top: 100px;
 }
 
-.fondo {
+.fondo_sm {
+    background-color: rgba(0, 0, 0, 0.795);
+}
+
+.fondo_lg {
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.795);
     height: 500px;
